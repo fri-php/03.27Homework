@@ -28,7 +28,7 @@ if (isset($_COOKIE["item2"])) {
 	        "<td>s002</td>".
 	        "<td>".$_COOKIE["item2"]."</td>".
 	        "<td>20000</td>".
-	        "<td>".$_COOKIE["quantity1"]."</td>".
+	        "<td>".$_COOKIE["quantity2"]."</td>".
 			"</tr>";
 }
 
