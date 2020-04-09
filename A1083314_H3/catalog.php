@@ -1,9 +1,4 @@
 <?php
-session_start();
-if($_SESSION["login"]=="No")
-{
-header('Location:failhw.php');
-}
 ?>
 
 <form action="addcart.php" method="post">
