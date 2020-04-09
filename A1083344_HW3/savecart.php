@@ -1,0 +1,65 @@
+<?php
+session_start();
+if(isset($_SESSION["login"]))
+{
+if( isset($_POST["Item"]))
+{
+	$_SESSION["Quantity"]=$_POST["Quantity"];
+	$id=$_POST["Item"];
+	$_SESSION["ID"]=$id;
+	if($id==1)
+	{
+		$_SESSION["Name"]="100kg的花生米";
+		$_SESSION["Price"]=10000;
+	}
+	else if($id==2)
+	{
+		$_SESSION["Name"]="150kg的蓮霧";
+		$_SESSION["Price"]=15000;
+	}	
+	else if($id==3)
+	{
+		$_SESSION["Name"]="200kg的上好芭樂";
+		$_SESSION["Price"]=20000;
+	}
+}	
+if($_SESSION["ID"]==1)
+{
+	$id=$_SESSION["ID"];
+	$name=$_SESSION["Name"];
+	$price=$_SESSION["Price"];
+	$quantity=$_SESSION["Quantity"];
+	setcookie("ID1",$id,time()+3600);
+	setcookie("Name1",$name,time()+3600);
+	setcookie("Price1",$price,time()+3600);
+	setcookie("Quantity1",$quantity,time()+3600);
+}
+if($_SESSION["ID"]==2)
+{
+	$id=$_SESSION["ID"];
+	$name=$_SESSION["Name"];
+	$price=$_SESSION["Price"];
+	$quantity=$_SESSION["Quantity"];
+	setcookie("ID2",$id,time()+3600);
+	setcookie("Name2",$name,time()+3600);
+	setcookie("Price2",$price,time()+3600);
+	setcookie("Quantity2",$quantity,time()+3600);
+}
+if($_SESSION["ID"]==3)
+{
+	$id=$_SESSION["ID"];
+	$name=$_SESSION["Name"];
+	$price=$_SESSION["Price"];
+	$quantity=$_SESSION["Quantity"];
+	setcookie("ID3",$id,time()+3600);
+	setcookie("Name3",$name,time()+3600);
+	setcookie("Price3",$price,time()+3600);
+	setcookie("Quantity3",$quantity,time()+3600);
+}
+header("Location:shoppingcart.php");
+}
+else
+{
+	header('location:shoplogin.php');
+}
+?>
