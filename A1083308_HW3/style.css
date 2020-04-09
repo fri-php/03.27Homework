@@ -1,0 +1,42 @@
+body{
+	background-color: 	#FFF0F5;
+	font-family: Microsoft JhengHei;
+}
+table{
+	background-color: rgba(255,255,255, 1);
+	font-size: 18px;
+	width: 30%;
+	text-align: center;
+	border-collapse:collapse;
+	}
+th{
+	background-color: #FFB6C1;
+}
+td{
+	background-color: #FFE4E1;
+}
+input{
+	font-family: Microsoft JhengHei;
+}
+#number{
+	width: 5em;
+}
+input[type=button],[type=submit],a{
+  background-color: #FFC0CB;
+  border: none;
+  color: black;
+  padding: 5px 8px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+input[type=text],[type=password],[type=number],select{
+  border: 1px solid black;
+  padding: 3px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
