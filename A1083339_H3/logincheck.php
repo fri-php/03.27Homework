@@ -1,0 +1,15 @@
+<?php
+$id="a1083339";
+$pwd="a1083339";
+$uid=$_POST["id"]
+$upwd=$_POST["pwd"]
+if($uid=$id&&$upwd=$pwd)
+{
+	$session_["login"]="yes";
+	$date=strtoime
+	<header>('Location:success.php');
+}else{
+	$_SESSION["login"]="No";
+    header('Location:fail.php');
+}
+?>
