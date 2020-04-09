@@ -1,7 +1,22 @@
-<h3>使用者登入</h3><br/>
+<?php
+session_start();
+if(isset($_COOKIE["loginName"]))
+	{
+		echo $_COOKIE["loginName"]."歡迎再次回來<br/>";
+		setcookie("loginName","",time()-3600);
+		$inUsername=$_COOKIE['loginName'];
+    }
+else
+    {
+    	echo"歡迎第一次來本站<br/>";
+    	$inUsername="";
+    }
+?>
 
-<form action="check.php" method="POST">
-請輸入你滴ID:<input type="text" name="id"><br/>
-請輸入你滴密碼:<input type="password" name="pwd"><br/>
+<h2>please log me in</h2>
+<form action='logincheck.php' method="POST">
+Your ID:<input type="text" name="id"><br/>
+Your password:<input type="password" name="pwd"><br/>
 <input type="submit"><br/>
 </form>
+<a href='logout.php'>登出系統</a>
