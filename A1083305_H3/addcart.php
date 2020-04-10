@@ -38,10 +38,7 @@ if($_SESSION["product"]=="product5"){
 		setcookie("NUMBER5",$_SESSION["number"],time()+3600);
 	}
 }
-else{
-	echo "數量錯誤!";
-}
 
-header('Location:addcart.php');
+header('Location:catalog.php');
 
 ?>

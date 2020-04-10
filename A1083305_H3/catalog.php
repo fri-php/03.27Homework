@@ -15,7 +15,7 @@
 </head>
 <center>
 <font face="微軟正黑體, Arial">
-<form  action="cart.php" method="POST">
+<form  action="addcart.php" method="POST">
 <p>
 <font size="5">選擇商品：
 <select style="font-size:20px;" name="product">
@@ -30,6 +30,7 @@
 </font>
 </p>
 <input type="submit"  value="加入購物車">
+<a href="cart.php">檢視購物車</a>
 </form>
 </center>
 </font>

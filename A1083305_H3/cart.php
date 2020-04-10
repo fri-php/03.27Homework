@@ -74,7 +74,7 @@ if (isset($_COOKIE["PRODUCT5"])){
 	echo "<td>".$_COOKIE["NUMBER5"]."</td></tr>";
 }
 echo "</table>";
-echo "</center>"
+echo "</center>";
 ?>
 </font>
 </html>
